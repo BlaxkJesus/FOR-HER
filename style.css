@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffe6e6;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevents scrollbars when "No" button moves */
+}
+
+.container {
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem; /* Scales with screen size */
+    color: #d63384;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    height: 100px; /* Space for the "No" button to move */
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.2s;
+}
+
+#yesButton {
+    background-color: #ff4d4d;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+}
+
+#noButton {
+    background-color: #6c757d;
+    color: white;
+    position: absolute;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 1.5rem; 
+    }
+    button { 
+        padding: 12px 20px; 
+        font-size: 1rem;
+    }
+}

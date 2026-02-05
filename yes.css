@@ -1,0 +1,38 @@
+/* Add these to your previous style.css */
+* {
+    font-family: 'Outfit';
+}
+.success-text {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+.felt-message {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+    margin-top: 20px;
+    border-left: 5px solid #ff4d4d;
+}
+
+.felt-message p {
+    margin-bottom: 15px;
+}
+
+.responsive-gif {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
